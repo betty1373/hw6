@@ -11,7 +11,6 @@ class Matrix;
 #include "controller.h"
 /// @file
 
-
 /// @author btv <example@example.com> 
    
 template<typename T, T defaultV = -1>

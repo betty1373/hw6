@@ -12,19 +12,14 @@ class Value {
         Matrix<T, defaultV> &m_matrix;
         T m_value {defaultV};
         index_t m_index;
-        //size_t m_r {};
-        //size_t m_c {};
     public:
         explicit Value(Matrix<T, defaultV> &matrix, T value)
                 :m_matrix (matrix), m_value (value) 
         {}  
         void set_index(size_t row,size_t col) {
             m_index = make_pair(row,col);
-            //m_r = row;
-           // m_c = col;
         }
         auto &operator=(T const &value) {  
-           // index_t ind = make_pair(m_r,m_c);
             auto it = m_matrix.find(m_index);     
             if (value==defaultV) {               
                 if (it!= m_matrix.end())
@@ -50,7 +45,7 @@ class Value {
             return left.m_value==right;
         }        
        
-       friend std::ostream &operator<<(std::ostream &os, Value<T, defaultV> const &p) {
+        friend std::ostream &operator<<(std::ostream &os, Value<T, defaultV> const &p) {
             return os << ((p.m_value == defaultV) ? defaultV : p.m_value);
         }
 };
