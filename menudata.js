@@ -51,10 +51,4 @@ var menudata={children:[
 {text:"Functions",url:"globals_func.html"},
 {text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html"},
-{text:"Macros",url:"globals_defs.html",children:[
-{text:"a",url:"globals_defs.html#index_a"},
-{text:"c",url:"globals_defs.html#index_c"},
-{text:"d",url:"globals_defs.html#index_d"},
-{text:"h",url:"globals_defs.html#index_h"},
-{text:"p",url:"globals_defs.html#index_p"},
-{text:"s",url:"globals_defs.html#index_s"}]}]}]}]}
+{text:"Macros",url:"globals_defs.html"}]}]}]}
