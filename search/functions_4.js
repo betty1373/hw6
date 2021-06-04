@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fstorage_103',['get_storage',['../class_matrix.html#a6ff110cb1a253c8945b0b7eb8e4705ae',1,'Matrix']]]
+  ['find_82',['find',['../class_matrix.html#aad25b5fc83a2dc17153f7b977cb80297',1,'Matrix']]]
 ];

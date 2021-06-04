@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>print_ip: CMakeLists.txt File Reference</title>
+<title>matrix: CMakeLists.txt File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">print_ip
+   <div id="projectname">matrix
    </div>
-   <div id="projectbrief">otus hw4</div>
+   <div id="projectbrief">otus hw6</div>
   </td>
  </tr>
  </tbody>
@@ -63,7 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">CMakeLists.txt File Reference</div>  </div>
 </div><!--header-->
@@ -71,16 +72,45 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8d79dde94567b730c2e3ea0f264270c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a8d79dde94567b730c2e3ea0f264270c2">cmake_minimum_required</a> (VERSION 3.2) if(NOT DEFINED ENV</td></tr>
-<tr class="separator:a8d79dde94567b730c2e3ea0f264270c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac225f6ceec532baa2e62d3e68751510e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#ac225f6ceec532baa2e62d3e68751510e">set</a> (ENV{GITHUB_RUN_NUMBER} 1) endif() project(print_ip VERSION 0.0. $ENV</td></tr>
-<tr class="separator:ac225f6ceec532baa2e62d3e68751510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387fed4c80283c38782ec2b9162aa24a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a387fed4c80283c38782ec2b9162aa24a">configure_file</a> (version.h.in ${PROJECT_SOURCE_DIR}/version.h) add_executable(print_ip $</td></tr>
-<tr class="separator:a387fed4c80283c38782ec2b9162aa24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d9b719013926665166d204e357e3e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a68d9b719013926665166d204e357e3e5">cmake_minimum_required</a> (VERSION 3.8) if(NOT DEFINED ENV</td></tr>
+<tr class="separator:a68d9b719013926665166d204e357e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a2c9d629d9404a6bc6588f51357ff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a05a2c9d629d9404a6bc6588f51357ff9">set</a> (ENV{GITHUB_RUN_NUMBER} 1) endif() project(matrix VERSION 0.0. $ENV</td></tr>
+<tr class="separator:a05a2c9d629d9404a6bc6588f51357ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415918466a72db8c9a867d7a50373740"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a415918466a72db8c9a867d7a50373740">configure_file</a> (version.h.in ${PROJECT_SOURCE_DIR}/version.h) include_directories($</td></tr>
+<tr class="separator:a415918466a72db8c9a867d7a50373740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e2dd76fbc4aa83428704a3eb8aa619"><td class="memItemLeft" align="right" valign="top">inc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a84e2dd76fbc4aa83428704a3eb8aa619">add_executable</a> (matrix ${PROJECT_SOURCE_DIR}/main.cpp) set_target_properties(matrix PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON COMPILE_OPTIONS &quot;-Wall</td></tr>
+<tr class="separator:a84e2dd76fbc4aa83428704a3eb8aa619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f534e3a35fe075a5731a7d601a4533"><td class="memItemLeft" align="right" valign="top">pedantic&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#ae7f534e3a35fe075a5731a7d601a4533">install</a> (TARGETS matrix RUNTIME DESTINATION bin) <a class="el" href="_c_make_lists_8txt.html#a9267ccdfbbaf6ba4f55c35f3a1f7fd90">set</a>(CPACK_GENERATOR DEB) <a class="el" href="_c_make_lists_8txt.html#a9267ccdfbbaf6ba4f55c35f3a1f7fd90">set</a>(CPACK_PACKAGE_VERSION_MAJOR &quot;$</td></tr>
+<tr class="separator:ae7f534e3a35fe075a5731a7d601a4533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9267ccdfbbaf6ba4f55c35f3a1f7fd90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a9267ccdfbbaf6ba4f55c35f3a1f7fd90">set</a> (CPACK_PACKAGE_VERSION_MINOR &quot;${PROJECT_VERSION_MINOR}&quot;) set(CPACK_PACKAGE_VERSION_PATCH &quot;$</td></tr>
+<tr class="separator:a9267ccdfbbaf6ba4f55c35f3a1f7fd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1b2bdaabe7939bd6bf795b37dd3b8787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a1b2bdaabe7939bd6bf795b37dd3b8787">Wextra</a></td></tr>
+<tr class="separator:a1b2bdaabe7939bd6bf795b37dd3b8787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8d79dde94567b730c2e3ea0f264270c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d79dde94567b730c2e3ea0f264270c2">&#9670;&nbsp;</a></span>cmake_minimum_required()</h2>
+<a id="a84e2dd76fbc4aa83428704a3eb8aa619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e2dd76fbc4aa83428704a3eb8aa619">&#9670;&nbsp;</a></span>add_executable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">inc add_executable </td>
+          <td>(</td>
+          <td class="paramtype">matrix ${PROJECT_SOURCE_DIR}/main.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68d9b719013926665166d204e357e3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d9b719013926665166d204e357e3e5">&#9670;&nbsp;</a></span>cmake_minimum_required()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -89,7 +119,7 @@ Functions</h2></td></tr>
           <td class="memname">cmake_minimum_required </td>
           <td>(</td>
           <td class="paramtype">VERSION 3.&#160;</td>
-          <td class="paramname"><em>2</em></td><td>)</td>
+          <td class="paramname"><em>8</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -97,8 +127,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a387fed4c80283c38782ec2b9162aa24a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a387fed4c80283c38782ec2b9162aa24a">&#9670;&nbsp;</a></span>configure_file()</h2>
+<a id="a415918466a72db8c9a867d7a50373740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415918466a72db8c9a867d7a50373740">&#9670;&nbsp;</a></span>configure_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,8 +145,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac225f6ceec532baa2e62d3e68751510e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac225f6ceec532baa2e62d3e68751510e">&#9670;&nbsp;</a></span>set()</h2>
+<a id="ae7f534e3a35fe075a5731a7d601a4533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f534e3a35fe075a5731a7d601a4533">&#9670;&nbsp;</a></span>install()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pedantic install </td>
+          <td>(</td>
+          <td class="paramtype">TARGETS matrix RUNTIME DESTINATION&#160;</td>
+          <td class="paramname"><em>bin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9267ccdfbbaf6ba4f55c35f3a1f7fd90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9267ccdfbbaf6ba4f55c35f3a1f7fd90">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">set </td>
+          <td>(</td>
+          <td class="paramtype">CPACK_PACKAGE_VERSION_MINOR &quot;${PROJECT_VERSION_MINOR}&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05a2c9d629d9404a6bc6588f51357ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a2c9d629d9404a6bc6588f51357ff9">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,6 +193,21 @@ Functions</h2></td></tr>
           <td class="paramtype">ENV{GITHUB_RUN_NUMBER}&#160;</td>
           <td class="paramname"><em>1</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a1b2bdaabe7939bd6bf795b37dd3b8787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2bdaabe7939bd6bf795b37dd3b8787">&#9670;&nbsp;</a></span>Wextra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wextra</td>
         </tr>
       </table>
 </div><div class="memdoc">
