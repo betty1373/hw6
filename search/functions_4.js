@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_72',['version',['../namespaceprintip.html#a4cd2a3ecb5833676e9cecc6c78e5d502',1,'printip']]]
+  ['get_5fstorage_103',['get_storage',['../class_matrix.html#a6ff110cb1a253c8945b0b7eb8e4705ae',1,'Matrix']]]
 ];
