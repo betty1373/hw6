@@ -1,8 +1,7 @@
 #include "matrix.h"
 #include <cassert>
 /// @file
-
-/// @brief Main function. Print Ip's from various types.
+/// @brief Main function. Testing as working sparse matrix with default value
 /// @author btv<example@example.com>
 int main(int, char *[]) {
 
