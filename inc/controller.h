@@ -3,15 +3,8 @@
 
 using namespace std;
 /// @file
-/// Helper types
-/// template< bool B, class T = void >
-/// using enable_if_t = typename enable_if<B,T>::type;
-
-/// @brief  Prints IP, represented as a integral type
-/// @tparam T - integral type (bool, char, short, uint, int, long, etc...)
-/// @param  value - IP address
-/// @author btv <example@example.com>
-   
+/// @brief  Class mediator between matrix object and their cells
+/// @author btv <example@example.com>      
     template<typename T, T defaultV = -1>
     class Controller {
         Matrix<T, defaultV> &m_matrix;
@@ -23,6 +16,7 @@ using namespace std;
                 m_new(Value<T, defaultV>(m_matrix,defaultV)),
                 m_r(row)
         {}
+/// @brief  Operator [] for access to matrix cell
         Value<T,defaultV> &operator[](size_t col) {
             index_t ind = make_pair(m_r,col);
             if (auto it = m_matrix.find(ind);

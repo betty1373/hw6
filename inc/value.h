@@ -1,12 +1,8 @@
 #pragma once
     using namespace std;
 /// @file
-
-/// @brief  Prints IP, represented as a integral type
-/// @tparam T - integral type (bool, char, short, uint, int, long, etc...)
-/// @param  value - IP address
-/// @author btv <example@example.com>
-   
+/// @brief  Class object of matrix cell 
+/// @author btv <example@example.com>   
 template<typename T, T defaultV = -1>
 class Value {       
         Matrix<T, defaultV> &m_matrix;
@@ -19,6 +15,7 @@ class Value {
         void set_index(size_t row,size_t col) {
             m_index = make_pair(row,col);
         }
+/// @brief  Operator = for insert or change value in matrix cell
         auto &operator=(T const &value) {  
             auto it = m_matrix.find(m_index);     
             if (value==defaultV) {               
@@ -35,17 +32,16 @@ class Value {
             }
             return *this;
         } 
+/// @brief  Operator () for access value in matrix cell
         operator const T &() const noexcept {
-           // index_t ind = make_pair(m_r,m_c);
              auto it = m_matrix.find(m_index);   
              return (it!= m_matrix.end()) ? it->second.m_value : defaultV;
-        }
-      
+        }    
         friend bool operator==(Value<T,defaultV> &left, T const &right) {
             return left.m_value==right;
         }        
        
         friend std::ostream &operator<<(std::ostream &os, Value<T, defaultV> const &p) {
-            return os << ((p.m_value == defaultV) ? defaultV : p.m_value);
+            return os << (p.m_value == defaultV? defaultV : p.m_value);
         }
 };

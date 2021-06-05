@@ -23,8 +23,8 @@ int main(int, char *[]) {
       tie(x,y) = make_tuple(key.first,key.second);
       cout <<"["<< x <<","<< y<<"]=" << value << endl;
    }
-   ((matrix[1][100]=5)=2)=53;
-   cout << matrix[1][100]<< endl;
+   ((matrix[100][100]=314)=0)=217;
+   cout << matrix[100][100]<< endl;
    test();
    return 0;
 }  
