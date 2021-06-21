@@ -41,8 +41,7 @@ int main(int, char *[]) {
    assert(matrix.size()==1);
 
    for (const auto &[key,value] : matrix) {
-      size_t x,y;
-      tie(x,y) = make_tuple(key.first,key.second);
+      auto [x,y] = key;
       cout <<"["<< x <<","<< y<<"]=" << value << endl;
    }
    ((matrix[100][100]=314)=0)=217;
