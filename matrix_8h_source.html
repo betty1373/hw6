@@ -113,13 +113,12 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        cout &lt;&lt; matrix.<a class="code" href="class_matrix.html#a63ae01dc98e5659e79973e2c9c808359">size</a>() &lt;&lt; endl;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[key,value] : matrix) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">size_t</span> x,y;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            tie(x,y) = make_tuple(key.first,key.second);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            cout &lt;&lt;<span class="stringliteral">&quot;[&quot;</span>&lt;&lt; x &lt;&lt;<span class="stringliteral">&quot;,&quot;</span>&lt;&lt; y&lt;&lt;<span class="stringliteral">&quot;]=&quot;</span> &lt;&lt; value &lt;&lt; endl;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="matrix_8h.html#ae64f17a84dc9c7144d1036498ff26fd9">   58</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="matrix_8h.html#ae64f17a84dc9c7144d1036498ff26fd9">version</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;           <span class="keyword">auto</span> [x,y] = key;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            cout &lt;&lt;<span class="stringliteral">&quot;[&quot;</span>&lt;&lt; x &lt;&lt;<span class="stringliteral">&quot;,&quot;</span>&lt;&lt; y&lt;&lt;<span class="stringliteral">&quot;]=&quot;</span> &lt;&lt; value &lt;&lt; endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="matrix_8h.html#ae64f17a84dc9c7144d1036498ff26fd9">   57</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="matrix_8h.html#ae64f17a84dc9c7144d1036498ff26fd9">version</a>();</div>
 <div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdef"><b>Definition:</b> controller.h:9</div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition:</b> matrix.h:16</div></div>
 <div class="ttc" id="aclass_matrix_html_a00a38760550a144d7966b7a8eb3d74c9"><div class="ttname"><a href="class_matrix.html#a00a38760550a144d7966b7a8eb3d74c9">Matrix::Matrix</a></div><div class="ttdeci">Matrix()</div><div class="ttdef"><b>Definition:</b> matrix.h:20</div></div>
