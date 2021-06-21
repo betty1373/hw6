@@ -1,5 +1,4 @@
 #pragma once
-    using namespace std;
 /// @file
 /// @brief  Class object of matrix cell 
 /// @author btv <example@example.com>   
@@ -13,7 +12,7 @@ class Value {
                 :m_matrix (matrix), m_value (value) 
         {}  
         void set_index(size_t row,size_t col) {
-            m_index = make_pair(row,col);
+            m_index = std::make_pair(row,col);
         }
 /// @brief  Operator = for insert or change value in matrix cell
         auto &operator=(T const &value) {  
