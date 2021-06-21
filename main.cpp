@@ -1,5 +1,28 @@
 #include "matrix.h"
 #include <cassert>
+void test() {
+        const size_t msize = 9;
+        Matrix<int,0> matrix;
+        
+        for (auto i=0;i<=msize;i++) {
+            matrix[i][i] = i;
+            matrix[i][msize-i] = msize-i;
+        }
+
+        for (auto i=1;i<msize;i++) {
+             for (auto j=1;j<msize;j++) {
+                cout<< matrix[i][j] << " ";
+            }
+            cout << endl;
+        }
+        cout << matrix.size() << endl;
+
+        for (const auto &[key,value] : matrix) {
+           auto [x,y] = key;
+            
+            cout <<"["<< x <<","<< y<<"]=" << value << endl;
+        }
+}
 /// @file
 /// @brief Main function. Testing as working sparse matrix with default value
 /// @author btv<example@example.com>
